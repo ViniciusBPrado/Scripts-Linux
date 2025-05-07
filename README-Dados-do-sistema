@@ -1,0 +1,22 @@
+📄 Coletar_dados_do_sistema.sh
+Este script shell automatiza a coleta de informações básicas sobre o sistema operacional e gera um relatório salvo em um arquivo de texto.
+
+🔍 Funcionalidades
+Coleta e salva os seguintes dados no arquivo informacoes_sistema.txt:
+
+✅ Memória RAM Total (free -h)
+
+✅ Modelo do Processador (lscpu)
+
+✅ Montagem dos Discos (df -hT)
+
+✅ Sistema Operacional (/etc/os-release)
+
+Organiza os dados com divisores visuais e títulos.
+
+Apresenta o relatório gerado ao final da execução.
+
+📦 Saída
+O relatório é salvo no mesmo diretório do script, no arquivo: informacoes_sistema.txt
+
+▶️ Uso: Coletar_dados_do_sistema.sh
