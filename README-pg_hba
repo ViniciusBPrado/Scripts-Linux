@@ -1,0 +1,25 @@
+🔧 altera_pghba.sh
+Este script shell facilita a adição segura e interativa de faixas de IP no arquivo pg_hba.conf do PostgreSQL, responsável pelo controle de acesso de clientes ao banco de dados.
+
+⚙️ Funcionalidades
+🔍 Localiza automaticamente o arquivo pg_hba.conf em diretórios comuns.
+
+✅ Valida as faixas de IP inseridas no formato CIDR (ex: 192.168.0.0/24).
+
+➕ Permite múltiplas entradas, separadas por ;.
+
+📝 Adiciona comentários opcionais às linhas incluídas.
+
+✏️ Formata automaticamente as linhas para manter a legibilidade do pg_hba.conf.
+
+🔄 Recarrega o serviço PostgreSQL após a modificação para aplicar as alterações.
+
+👁️ Exibe as entradas adicionadas antes e depois da confirmação do usuário.
+
+📦 Exemplo de linha adicionada ao pg_hba.conf
+
+host    all             all             192.168.0.0/24		md5 #Acesso da rede interna
+
+▶️ Uso: bash altera_pghba.sh
+
+⚠️ Requer permissões de sudo para recarregar o PostgreSQL (systemctl reload postgresql).
